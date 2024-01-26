@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e1b-7a-Ra2">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Match Summery View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MatchSummeryViewController" id="BYZ-38-t0r" customClass="MatchSummeryViewController" customModule="CricketInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EAl-Mn-8ca">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8bC-Xf-vdC" id="jWQ-x9-wGW"/>
+                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="oaw-10-qyp"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EAl-Mn-8ca" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Rnu-3D-S89"/>
+                            <constraint firstItem="EAl-Mn-8ca" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TuM-j6-FVZ"/>
+                            <constraint firstItem="EAl-Mn-8ca" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tOI-pK-Naw"/>
+                            <constraint firstItem="EAl-Mn-8ca" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ung-Bh-Jgb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="35e-XH-RWY"/>
+                    <connections>
+                        <outlet property="tableView" destination="EAl-Mn-8ca" id="ZVp-bf-zzO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.2519083969464" y="-34.507042253521128"/>
+        </scene>
+        <!--Score Card View Controller-->
+        <scene sceneID="U2j-7b-EwD">
+            <objects>
+                <viewController storyboardIdentifier="ScoreCardViewController" id="LT9-cW-yhb" customClass="ScoreCardViewController" customModule="CricketInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q98-SX-nVV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="M5i-Nf-NDZ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w0Q-kf-FVT"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="M5i-Nf-NDZ" firstAttribute="trailing" secondItem="w0Q-kf-FVT" secondAttribute="trailing" id="CHD-JZ-BVG"/>
+                            <constraint firstItem="M5i-Nf-NDZ" firstAttribute="top" secondItem="w0Q-kf-FVT" secondAttribute="top" id="FEg-DB-CeM"/>
+                            <constraint firstItem="M5i-Nf-NDZ" firstAttribute="leading" secondItem="w0Q-kf-FVT" secondAttribute="leading" id="h9X-lS-iDO"/>
+                            <constraint firstItem="M5i-Nf-NDZ" firstAttribute="bottom" secondItem="w0Q-kf-FVT" secondAttribute="bottom" id="wYY-c5-D78"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="M5i-Nf-NDZ" id="egz-LN-yCJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHa-NA-KTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1758.0152671755725" y="-34.507042253521128"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v9E-nb-fZo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e1b-7a-Ra2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HgT-TU-m6b">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3Ni-lv-UkP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uax-L8-qhs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
